@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+//notif sukses n login
 $success_msg = $_SESSION['success_msg'] ?? null;
 if ($success_msg) unset($_SESSION['success_msg']);
 $error_msg = $_SESSION['error_msg'] ?? null;
@@ -326,4 +327,5 @@ mysqli_close($koneksi);
 </script>
 </body>
 </html>
+
 
